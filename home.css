@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding-right: 40px;
+    background-color:#ecd1bb;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navlogo{
+    padding: 5px 0 5px 20px;
+    border-radius: 50%;
+}
+
+.navbar{
+    width: 97%;
+    list-style: none;
+    text-align: right;
+    padding-top: 8px;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbarli{
+    display: inline-block;
+    padding: 8px 20px ;
+    margin: 8px 0px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbarli:hover{
+    border: 1px solid #b8b8b8;
+    background-color: #ffe4d56a;
+}
+
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+}
+
+#home{
+    padding: 0px 0px 50px 0px;
+}
+
+#name{
+    width: 40%;
+    padding: 170px 25px 0px 200px;
+    margin-top: 40px;
+    /*  */
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 4px;
+}
+
+#introimage{
+    width: 50%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.heading{
+    padding: 150px 100px 0px 150px ;
+}
+
+#about{
+    margin: 25px 0 50px 0;
+}
+
+#logo{
+    padding-left: 105px;
+}
+
+#description{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.course{
+    padding: 25px 0px 50px 0px;
+}
+
+.card{
+    padding: 20px 0px 0 20px;
+    width: 256px;
+    margin:0 4px;
+    overflow: hidden;
+    display: inline;
+    border: 1px solid transparent;
+    text-align: center;
+    background: rgb(255,249,245);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255,248,242,1) 50%, rgba(255,244,235,1) 100%);
+}
+
+.card:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: #ECCDB4; */
+}
+
+.cardimg{
+    height:228px;
+    width: 228px;
+}
+
+.dancename{
+    padding: 20px;
+    /*  */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn{
+    padding-top: 25px;
+}
+
+.btn button{
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    border-color:1px solid black;
+    box-shadow: 0 5px 7px 0 rgba(223, 102, 102, 0.2), 0 3px 10px 0 rgba(242, 133, 133, 0.19);
+}
+
+#more{
+    width:25%;
+    text-align: left;
+    padding: 20px 250px 100px 200px;
+}
+
+#morebtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 10px;
+}
+
+#morebtn:hover{
+    box-shadow: 30px 40px 40px 0 rgba(88, 88, 88, 0.2), 0 3px 10px 0 rgba(37, 37, 37, 0.375);
+}
+
+#footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: left;
+    color: white;
+
+}
+
+#logo2{
+    width:30%;
+    padding: 50px 0px 50px 100px;
+    
+}
+
+#follow{
+    width:30%;
+    padding: 50px 0px 50px 100px;
+}
+
+#contact{
+    width:20%;
+    padding: 50px 0px 50px 100px;
+}
+
+.socialmedia{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.socialmedia:hover{
+    box-shadow: 30px 40px 40px 0 rgba(192, 193, 198, 0.2), 0 3px 10px 0 rgba(228, 228, 232, 0.375);
+}
+
+#follow h4,#contact h4{
+    padding-bottom: 20px;
+}
