@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Rubik+Iso&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>ToDoList</title>
+    <script src="https://kit.fontawesome.com/2c2927dc00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">TO DO LIST</h1>
+    </div>
+    <div class="complete-list-icon" onclick="displayCompleted()"> 
+        <i class="fa-solid fa-check-double" ></i>
+    </div>
+    <div class="complete-list">
+        <div class="backbutton" onclick="backCompleted()"> 
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="CompleteContainer">
+            <h1>COMPLETED TASKS</h1>
+        </div>
+    </div>
+    <div class="delete-list-icon" onclick="displayDeleted()">
+        <i class="fa-sharp fa-solid fa-trash"></i>
+    </div>
+    <div class="delete-list">
+        <div class="backbutton" onclick="backDeleted()">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="DeleteContainer">
+            <h1>DELETED TASKS</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div id="todolist">
+            <div id="text">
+                <input id="input" type="text" placeholder="Enter the task"/>
+                <input id="date" type="date" />
+            </div>
+            <div id="addbutton">
+                <input type="submit" id="additem" value="Add to List" onClick="submit()"></input>
+            </div>
+        </div>
+    </div>
+    <div class="dialogue">
+        <div id="complete-popup">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+            <div id="complete-msg">
+                <h4>Task Successfully Completed</h4>
+                <h6>Click on Complete icon to view more.</h6>
+            </div>
+            <div class="close">
+                <h5>CLICK HERE TO CLOSE</h5>
+            </div>
+        </div>
+    </div>
+    <div class="dialogue">
+        <div id="delete-popup">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+            <div id="delete-msg">
+                <h4>Task Successfully Deleted</h4>
+                <h6>Click on Delete icon to view more.</h6>
+            </div>
+            <div class="close">
+                <h5>CLICK HERE TO CLOSE</h5>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

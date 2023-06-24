@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    padding: 100px;
+    border: 1px solid transparent;
+    box-shadow: 2px 5px 5px 12px rgba(191, 191, 191, 0.2), 0 3px 10px 0 rgb(113, 96, 245);
+    height: 65vh;
+    background-image: url('./background.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+#heading{
+    color: pink;
+    background-image: linear-gradient(to right , rgb(250, 187, 234),rgb(231, 134, 248),rgb(184, 96, 251));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 50px;
+}
+.complete-list{
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    height: 93vh;
+    top: 0;
+    left: -100vw;
+    background-image: url('./background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.CompletedTask{
+    padding: 10px 10px;
+    width: 40%;
+    margin: 15px 0;
+    box-shadow: 0 1px 2px 0px rgba(245, 240, 240, 0.2), 0 3px 5px 0 rgb(172, 252, 183);
+    border-radius: 25px;
+}
+.CompleteContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px; 
+}
+.CompleteContainer h1{
+    font-family: 'Rubik Iso', cursive;
+    letter-spacing: 0.5em;
+    padding: 20px 0 50px;
+    color: rgb(0, 255, 47);;
+}
+.delete-list{
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    height: 93vh;
+    top: 0;
+    left: -100vw;
+    background-image: url('./background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.DeletedTask{
+    padding: 10px 10px;
+    width: 40%;
+    margin: 15px 0;
+    box-shadow: 0 1px 2px 0px rgba(245, 240, 240, 0.2), 0 3px 5px 0 rgb(252, 172, 172);
+    border-radius: 25px;
+}
+.DeleteContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px; 
+}
+.DeleteContainer h1{
+    font-family: 'Rubik Iso', cursive;
+    letter-spacing: 0.5em;
+    padding: 20px 0 50px;
+    color: rgb(255, 0, 0);
+}
+.backbutton{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 10;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+@keyframes slide-in{
+    from,0% {
+        left: -100vw;
+    }
+    to,100% {
+        left: 0vw;
+    }
+}
+@keyframes slide-out {
+    from,0% {
+        left: 0vw;
+    }
+    to,100% {
+        left: -100vw;
+    }
+}
+.complete-list-icon{
+    position: absolute;
+    top: 2px;
+    right: 50px;
+    z-index: 10;
+    color: rgb(0, 255, 47);
+    padding: 10px;
+    cursor: pointer;
+}
+.delete-list-icon{
+    position: absolute;
+    top: 2px;
+    cursor: pointer;
+    right: 2px;
+    z-index: 10;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 50px 0;
+}
+#todolist{
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+#text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: white;
+    
+}
+#input{
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 0px 10px 0 20px;
+    color: black;
+    outline: none;
+    border: 0px;
+}
+#date{
+    height: 100%;
+    border-radius: 25px;
+    border: 0px;
+    padding: 0 20px 0 0;
+}
+#date:focus{
+    border: 0px;
+    outline: none;
+}
+#addbutton{ 
+    margin-left: 10px;
+    width:20%;
+    height: 100%;
+}
+#additem:hover{
+    cursor: pointer;
+}
+#additem{
+    width:100%;
+    height: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 5px 10px ;
+}
+.task{
+    font-size: 16px;
+    color: aliceblue;
+    display: flex;
+    width: 60%;
+}
+.taskname{
+    width: 50%;
+    transition: all linear 0.1s;
+    padding: 0 10px;
+}
+.taskname:read-only{
+    cursor: default;
+    text-transform: capitalize;
+}
+.taskname:not(:read-only){
+    color: aquamarine;
+    border: 0px solid transparent;
+    box-shadow: 0 2px 3px 0px rgba(252, 252, 252, 0.2), 0 3px 10px 0 rgb(171, 160, 255);
+    border-radius: 10px;
+ }
+.taskname:focus,.taskname:focus-visible{
+    outline: none; 
+}
+.edit{
+    width:10%;
+    text-align: center;
+    padding: 0 10px;
+    transition: all linear 0.1s;
+}
+.edit:hover{
+    cursor: pointer;
+    scale: .9;
+    box-shadow: 0 2px 3px 0px rgba(191, 191, 191, 0.2), 0 3px 10px 0 rgb(113, 96, 245);
+}
+.delete{
+    width: 10%;
+    text-align: center;
+    padding: 0 10px;
+    transition: all linear 0.1s;
+}
+.delete:hover{
+    cursor: pointer;
+    scale: .9;
+    box-shadow: 0 2px 3px 0px rgba(191, 191, 191, 0.2), 0 3px 10px 0 rgb(113, 96, 245);
+}
+.complete{
+    width: 10%;
+    text-align: center;
+    padding: 0 10px;
+    transition: all linear 0.1s;
+}
+.complete:hover{
+    cursor: pointer;
+    scale: .9;
+    box-shadow: 0 2px 3px 0px rgba(191, 191, 191, 0.2), 0 3px 10px 0 rgb(113, 96, 245);
+}
+.reminder{
+    color: rgb(248, 79, 88);
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 0 10px;
+    width: 20%;
+}
+@keyframes blink{
+    0%{color:red;}
+    50%{color:rgb(251, 165, 165);}
+    100%{color:red;}
+}
+.dialogue{
+    display:none;
+    position: fixed;
+    left: 40vw;
+    top: 40vh;
+    opacity: 1;
+    filter: blur(0px);
+}
+#complete-popup{
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 120, 22);
+}
+.dialogue:hover{
+    cursor: default;
+}
+#delete-popup{
+    width: 20vw;
+    height: 20vh;
+    display:flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    
+}
+#delete-msg{
+    padding: 10px 0;
+}
+#complete-msg{
+    padding: 10px 0;
+}
+.close{
+    padding-top: 10px;
+    text-decoration: underline;
+    color: dodgerblue;
+    animation-name: blinkc;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.close:hover{
+    cursor: pointer;
+    scale: .9;
+}
+@keyframes blinkc{
+    0%{color:rgb(25, 140, 255);}
+    50%{color:rgb(140, 196, 252);}
+    100%{color:rgb(25, 140, 255);}
+}
